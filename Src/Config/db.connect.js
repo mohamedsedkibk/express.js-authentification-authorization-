@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 const dbconnect=async()=>{
     try{
-await mongoose.connect(process.env.connecting_database);
+await mongoose.connect('mongodb://localhost:27017/Role-based');
 console.log('database is connected')
     }
  catch(error){

@@ -24,7 +24,7 @@ const login = async (req, res) => {
             return res.status(404).send("verify your password");
         }
 
-        var token = jwt.sign({name:findname.username,role:findname.role}, process.env.payload, { expiresIn: '1h' });
+        var token = jwt.sign({name:findname.username,role:findname.role},tokenjwt65446554665, { expiresIn: '1h' });
         res.status(200).send(token);
     }
     catch (error) {

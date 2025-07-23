@@ -8,7 +8,7 @@ const verifytoken = (req, res, next) => {
         if (!token) {
             return res.send("no token")
         }
-        const verifytoken = jwt.verify(token, process.env.payload);
+        const verifytoken = jwt.verify(token,tokenjwt65446554665);
         if (!verifytoken) {
             return res.send("this not the token of the user")
         }

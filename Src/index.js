@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.Port || 7000;
+const port = 5000;
 const Dbconnect = require('./Config/db.connect');
 const userroute = require('./Routes/Authentification');
 const accessroute=require('./Routes/Authorization')
